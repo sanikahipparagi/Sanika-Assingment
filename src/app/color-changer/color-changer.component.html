@@ -1,0 +1,9 @@
+<div>
+    <button (click)="setColor('red')">Red</button>
+    <button (click)="setColor('green')">Green</button>
+    <button (click)="setColor('blue')">Blue</button>
+  </div>
+  
+  <div class="color-box" [ngStyle]="{'background-color': currentColor}">
+    The background color is {{ currentColor }}.
+  </div>

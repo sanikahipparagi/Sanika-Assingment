@@ -1,0 +1,20 @@
+<nav>
+    <ul>
+      <li (click)="selectMenu('Home')" [ngClass]="{'selected': selectedMenu === 'Home'}">Home</li>
+      <li (click)="selectMenu('Services')" [ngClass]="{'selected': selectedMenu === 'Services'}">Services</li>
+      <li (click)="selectMenu('Contact us')" [ngClass]="{'selected': selectedMenu === 'Contact us'}">Contact us</li>
+    </ul>
+  </nav>
+  
+  
+  <div class="message" *ngIf="selectedMenu === 'Home'">
+    You chose Home menu
+  </div>
+  <div class="message" *ngIf="selectedMenu === 'Services'">
+    You chose Services menu
+  </div>
+  <div class="message" *ngIf="selectedMenu === 'Contact us'">
+    You chose Contact us menu
+  </div>
+
+  
